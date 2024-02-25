@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="style.css">
+    <title>Proyecto Final de GitHub</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Proyecto Final: Parte 2 - Git CLI</h1>
+    
+    <h2 style="text-align: center;" >Tarea 1: Birfucar el Repositorio</h2>
+    
+    <p>1- Birfurcar el Repositorio Fuente del Proyecto</p>
+          <p> Nota: No olvidar cambiar el nombre de la rama del repositorio de master a main</p>
+    
+    <p>2- Guarde la URL de su Repositorio Birfucardo en un bloc de notas para enviarla más tarde para su revisión</p><br>
+
+
+    <h2 style="text-align: center;">Tarea 2: Corregir el error tipográfico y fusionarlo con principal</h2>
+
+    <p>1- Clona el repositorio bifurcado en el entorno de laboratorio</p>
+
+         <p>git clone <"el nombre del repositorio"></p>
+
+    <p>2- Crea una rama llamada bug-fix-typo</p>
+        
+          <p>git branch "bug-fix-typo"</p>
+
+     <p>3- Cambie el pie de página en el archivo README.md principal de </p>
+      
+     <p style="text-align: center;">
+        2022 XYZ, Inc. <br><br>
+
+        a <br><br>
+
+        2023 XYZ, Inc.
+     </p><br>
+
+    <p>4- Agregue el archivo con su solución y confírmelo con un mensaje significativo.</p>
+
+     <p>git add README.md</p>
+     <p>git config --global user.email "your-email@example.com"</p>
+     <p>git config --global user.name "YourName"</p>
+     <p>git commit -m "Fixed typographical error in README.md"</p><br>
+
+     <p>5- Empuje su solución a la bug-fix-typo rama. En este paso, necesitarás generar un token de acceso personal desde GitHub.com para usarlo como contraseña. Siga las instrucciones de la práctica de laboratorio Generar token de acceso personal de GitHub . </p>
+           
+        <p>git push origin bug-fix-typo</p>
+        <p>Nombre de Usuario de GitHub: Alejandro-1-Sosa</p>
+        <p>Contraseña: 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</p>
+
+    <p>6- Cambie a la rama principal. Fusiona la bug-fix-typorama nuevamente con tu mainrama. Tome una captura de pantalla que muestre la rama actual y la operación de fusión exitosa con el archivo que ha cambiado. Guarde la captura de pantalla como merge_branches.pngo merge_branches.jpg. </p>
+         
+         <p>git checkout main</p>
+         <p>git merge bug-fix-typo</p>
+         <p>Toma una captura de pantalla de la fusión exitosa y guárdala como merge_branches.png o merge_branches.jpg</p><br>
+
+    <h2 style="text-align: center;">Tarea 3: Revertir el error tipográfico y enviar una Solicitud de Extracción </h2>
+
+    <p>1- Verifique el contenido de README.md en la rama principal. El archivo ahora debería leer: </p>
+        <p>2023 XYZ, Inc.</p>
+
+    <p>2- Crea una nueva rama llamada bug-fix-revert.</p>
+       <p>git branch bug-fix-revert</p>
+
+    <p>3- Revierta el cambio que implementó en la tarea anterior usando el git revert comando. El archivo ahora debería leer: </p>
+         
+         <p>2022 XYZ, Inc.</p>
+         <p> git revert <"hash_del_commit"></p><br>
+
+
+    <p>4- Empuje la reversión a su repositorio en la bug-fix-revertrama. Asegúrese de utilizar el token de acceso personal que generó en Github para su cuenta como contraseña (y no su contraseña de git real), cuando se le solicite. </p>
+          
+         <p>git push origin bug-fix-revert</p>
+         <p>Ve a la interfaz de GitHub, crea una nueva solicitud de extracción desde bug-fix-revert a main</p>
+         <p>Anota la URL de la solicitud de extracción en un bloc de notas</p>
+
+    <p>5- Vaya a la interfaz de usuario de GitHub. Cree una nueva solicitud de extracción desde la bug-fix-revertrama de su repositorio a la mainrama del repositorio original . Este PR se cerrará automáticamente. Anote la URL de este PR en un bloc de notas para enviarlo más tarde para su revisión por pares .</p><br>
+
+    <h2 style="text-align: center;">Tarea 4: Consulta el Estado de tus Sucursales</h2>
+    
+    <p>1- Navegue a la Branchessección dentro de la interfaz de usuario de GitHub en su página. Estará en el siguiente formato: </p>
+         <p>https://github.com/<Your Github username>/jbbmo-Introduction-to-Git-and-GitHub/branches</p>
+
+    <p>2- Dentro de esta sección, encontrará los nombres de las sucursales junto con su estado actual. </p>
+    
+    <p>3- Tome nota de la URL de esta página en un bloc de notas para enviarla durante la revisión por pares.</p>
+
+    <h2 style="text-align: center;">Lista de Verificación</h2><br>
+    <p>
+        Después de completar esta parte del proyecto final, deberías tener: <br>
+
+        1- La URL del repositorio bifurcado. <br>
+
+        2- La URL de solicitud de extracció. <br>
+
+        3- La captura de pantalla que muestra la operación de fusión de bug-fix-typonombrado mainen merge_branchesformato png o jpg. <br>
+
+        4- La URL de la Branchespágina que muestra las ramas del repositorio y su estado.
+    </p>
+
+    
+
+
+
+
+</body>
+</html>
